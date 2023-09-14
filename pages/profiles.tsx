@@ -113,9 +113,9 @@ const App: React.FC<AppProps> = ({ images = [] }) => {
   return (
     <div className="flex items-center h-full justify-center">
       <div className="flex flex-col">
-        <h1 className="text-3xl md:text-6xl text-white text-center">Who is gaming?</h1>
+        <h1 className="text-3xl md:text-6xl text-white text-center">Who is ready to take action?</h1>
         
-        <button onClick={toggleDropdown} className="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+        <button onClick={toggleDropdown} className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
           Select Profile
         </button>
 

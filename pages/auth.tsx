@@ -103,7 +103,7 @@ const Auth = () => {
                 onChange={(e: any) => setPassword(e.target.value)} 
               />
             </div>
-            <button onClick={variant === 'login' ? login : register} className="bg-purple-600 py-3 text-white rounded-md w-full mt-10 hover:bg-purple-700 transition">
+            <button onClick={variant === 'login' ? login : register} className="bg-green-600 py-3 text-white rounded-md w-full mt-10 hover:bg-green-700 transition">
               {variant === 'login' ? 'Login' : 'Sign up'}
             </button>
             <div className="flex flex-row items-center gap-4 mt-8 justify-center">

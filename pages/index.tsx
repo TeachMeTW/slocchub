@@ -29,7 +29,7 @@ export async function getServerSideProps(context: NextPageContext) {
 
 const Home = () => {
   const { data: movies = [] } = useMovieList("movie");
-  const { data: shorts = [] } = useMovieList("shorts");
+  const { data: train = [] } = useMovieList("train");
   const { data: favorites = [] } = useFavorites();
   const {isOpen, closeModal} = useInfoModalStore();
 
@@ -40,7 +40,7 @@ const Home = () => {
       <Billboard />
       <div className="pb-40">
         <MovieList title="Trending Now" data={movies} />
-        <MovieList title="Shorts" data={shorts} />
+        <MovieList title="Trainings" data={train} />
         <MovieList title="My List" data={favorites} />
         
       </div>
