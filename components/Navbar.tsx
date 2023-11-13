@@ -41,6 +41,9 @@ const Navbar = () => {
   }, []);
 
   const { data: currentUser } = useCurrentUser();
+  const redirectToMaps = () => {
+    window.location.href = '/map'; // Redirect to the maps page
+  };
 
   return (
 
@@ -55,6 +58,7 @@ const Navbar = () => {
           <NavbarItem label="New & Popular" />
           <NavbarItem label="My List" />
           <NavbarItem label="Browse by Category" />
+          <NavbarItem label="Map" onClick={redirectToMaps} />
         </div>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
           <p className="text-white text-sm">Browse</p>

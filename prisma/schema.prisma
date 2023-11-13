@@ -69,3 +69,12 @@ model Movie {
   duration String
   classifier String @default("movie")
 }
+
+model Location {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  type        String
+  latitude    Float
+  longitude   Float
+  image       String?  // Optional field for image URL
+  description String
+}
